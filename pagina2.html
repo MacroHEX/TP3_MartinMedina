@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de Imágenes</title>
+    <title>Imágenes de Autos</title>
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-<header>
-    <h1>Galería de Imágenes</h1>
-</header>
 
-<section class="gallery">
-    <img src="image1.jpg" class="animate1" alt="Imagen 1">
-    <img src="image2.jpg" class="animate2" alt="Imagen 2">
-    <img src="image3.jpg" class="animate3" alt="Imagen 3">
-    <img src="image4.jpg" class="animate4" alt="Imagen 4">
-    <img src="image5.jpg" class="animate5" alt="Imagen 5">
-</section>
+<!-- Botones de navegación -->
+<div class="button-container">
+    <button onclick="window.location.href='index.html'">Inicio</button>
+    <button onclick="window.location.href='pagina1.html'">Tabla de Autos</button>
+    <button onclick="window.location.href='pagina2.html'">Galería de Autos</button>
+</div>
 
-<nav>
-    <button onclick="window.location.href='index.html'">Página Principal</button>
-    <button onclick="window.location.href='pagina3.html'">Tabla de Información</button>
-    <button onclick="window.location.href='pagina4.html'">Página Dinámica</button>
-</nav>
+<h1 class="welcome-text">Galería de Autos</h1>
+<img src="assets/imgs/car.png" alt="Imagen en movimiento" class="moving-image">
+
+<div>
+    <img src="assets/imgs/ford_mustang_gt_fastback_2018_4k-HD.jpg" alt="Ford Mustang" class="car-image"
+         onclick="window.open('https://www.ford.com')">
+    <img src="assets/imgs/2016_chevrolet_camaro_sema-wide.jpg" alt="Chevrolet Camaro" class="car-image"
+         onclick="window.open('https://www.chevrolet.com')">
+    <img src="assets/imgs/Toyota_Corolla_Hybrid_(E210)_IMG_4338.jpg" alt="Toyota Corolla" class="car-image"
+         onclick="window.open('https://www.toyota.com')">
+    <img src="assets/imgs/2017_honda_civic_type_r_6-HD.jpg" alt="Honda Civic" class="car-image"
+         onclick="window.open('https://www.honda.com')">
+    <img src="assets/imgs/2024-Nissan-Altima.jpg" alt="Nissan Altima" class="car-image"
+         onclick="window.open('https://www.nissan.com')">
+</div>
+
+<footer>&copy; 2024 Martin Medina</footer>
 </body>
 </html>
